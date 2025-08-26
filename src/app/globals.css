@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Shadcn/UI Base Colors */
+    --color-background: #ffffff;
+    --color-foreground: #1e293b; /* Dark Navy for foreground */
+
+    --color-card: #ffffff;
+    --color-card-foreground: #1e293b;
+
+    --color-popover: #ffffff;
+    --color-popover-foreground: #1e293b;
+
+    --color-primary: #1e40af; /* Primary Blue */
+    --color-primary-foreground: #ffffff; /* Cloud White */
+
+    --color-secondary: #dbeafe; /* Light Blue */
+    --color-secondary-foreground: #1e293b; /* Dark Navy */
+
+    --color-muted: #e0e7ff; /* Slightly darker Light Blue for muted backgrounds */
+    --color-muted-foreground: #64748b; /* Slate Gray for muted text */
+
+    --color-accent: #3b82f6; /* Sky Blue */
+    --color-accent-foreground: #ffffff; /* Cloud White */
+
+    --color-destructive: #ef4444; /* Standard red for destructive actions */
+    --color-destructive-foreground: #ffffff; /* Cloud White */
+
+    --color-border: #d2d2d2; /* Light gray for borders */
+    --color-input: #e5e7eb; /* Light gray for inputs */
+    --color-ring: #1e40af; /* Primary Blue for focus rings */
+
+    /* Chart Colors (example, can be adjusted) */
+    --color-chart-1: #3b82f6; /* Sky Blue */
+    --color-chart-2: #10b981; /* Success Green */
+    --color-chart-3: #f59e0b; /* Warm Orange */
+    --color-chart-4: #1e40af; /* Primary Blue */
+    --color-chart-5: #64748b; /* Slate Gray */
+
+    /* Sidebar Colors (example, can be adjusted) */
+    --color-sidebar: #f7f7f7;
+    --color-sidebar-foreground: #404040;
+    --color-sidebar-primary: #1a1a1a;
+    --color-sidebar-primary-foreground: #fafafa;
+    --color-sidebar-accent: #f0f0f0;
+    --color-sidebar-accent-foreground: #1a1a1a;
+    --color-sidebar-border: #d4d4d8;
+    --color-sidebar-ring: #3b82f6;
+
+    /* Radius tokens based on design system */
+    --radius-lg: 0.75rem; /* Larger for rounded elements */
+    --radius-md: 0.5rem;
+    --radius-sm: 0.375rem; /* Smaller for subtle rounding */
+
+    /* Shadcn/UI Base Variables */
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    --card: var(--color-card);
+    --card-foreground: var(--color-card-foreground);
+    --popover: var(--color-popover);
+    --popover-foreground: var(--color-popover-foreground);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+
+    /* Chart Colors */
+    --chart-1: var(--color-chart-1);
+    --chart-2: var(--color-chart-2);
+    --chart-3: var(--color-chart-3);
+    --chart-4: var(--color-chart-4);
+    --chart-5: var(--color-chart-5);
+
+    /* Sidebar Colors */
+    --sidebar-background: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+/* Custom Design System Colors */
+--color-primary-blue: #1e40af;
+--color-sky-blue: #3b82f6;
+--color-light-blue: #dbeafe;
+--color-cloud-white: #ffffff;
+--color-slate-gray: #64748b;
+--color-dark-navy: #1e293b;
+--color-success-green: #10b981;
+--color-warm-orange: #f59e0b;
+    /* Radius */
+    --radius: var(--radius-md); /* Default radius for Shadcn components */
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-dark-navy);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* IMPORTANT & CRITICAL: Always define the container class in this way */
+  .container {
+    margin-inline: auto; /* IMPORTANT & CRITICAL: Always define the margin-inline property in this way */
+    padding-inline: 2rem; /* IMPORTANT & CRITICAL: Always define the padding-inline property in this way */
+  }
+}
+
+@layer components {
+  /* Custom Design System Colors */
+  --color-primary-blue: #1e40af;
+  --color-sky-blue: #3b82f6;
+  --color-light-blue: #dbeafe;
+  --color-cloud-white: #ffffff;
+  --color-slate-gray: #64748b;
+  --color-dark-navy: #1e293b;
+  --color-success-green: #10b981;
+  --color-warm-orange: #f59e0b;
+
+  /* Font Families */
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Custom utility classes for better styling */
+@layer utilities {
+  .bg-primary-blue {
+    background-color: var(--color-primary-blue);
+  }
+  
+  .bg-sky-blue {
+    background-color: var(--color-sky-blue);
+  }
+  
+  .bg-light-blue {
+    background-color: var(--color-light-blue);
+  }
+  
+  .text-primary-blue {
+    color: var(--color-primary-blue);
+  }
+  
+  .text-sky-blue {
+    color: var(--color-sky-blue);
+  }
+  
+  .text-slate-gray {
+    color: var(--color-slate-gray);
+  }
+  
+  .text-dark-navy {
+    color: var(--color-dark-navy);
+  }
+  
+  .border-primary-blue {
+    border-color: var(--color-primary-blue);
+  }
+  
+  .hover\:bg-sky-blue:hover {
+    background-color: var(--color-sky-blue);
+  }
+  
+  .hover\:bg-primary-blue:hover {
+    background-color: var(--color-primary-blue);
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
+
+
