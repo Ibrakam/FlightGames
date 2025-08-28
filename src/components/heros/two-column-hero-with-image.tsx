@@ -1,6 +1,8 @@
 // @ts-nocheck
 "use client"
 
+import Link from "next/link";
+
 import { ArrowRight, ArrowUpRight, Plane } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -35,13 +37,15 @@ const TwoColumnHeroWithImage = () => {
             </p>
 
             <div className="flex w-full flex-col justify-center gap-3 sm:flex-row lg:justify-start pt-2">
-              <Button
-                size="lg"
-                className="w-full sm:w-auto group bg-[var(--color-primary-blue)] hover:bg-[var(--color-sky-blue)] text-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 rounded-full px-8"
-              >
-                Узнать больше
-                <ArrowRight className="ml-2 size-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+            <Link href="/games">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto group bg-[var(--color-primary-blue)] hover:bg-[var(--color-sky-blue)] text-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 rounded-full px-8"
+                >
+                  Начать игру
+                  <ArrowRight className="ml-2 size-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button
                 size="lg"
                 className="w-full sm:w-auto group bg-white hover:bg-gray-100 text-[var(--color-dark-navy)] border border-[var(--color-slate-gray)]/20 rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"

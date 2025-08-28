@@ -41,7 +41,7 @@ const FEATURES: Array<feature> = [
 
 const HeaderWithCardGrid = () => {
   return (
-    <section className="bg-[var(--color-light-blue)] bg-[length:3.125rem_3.125rem] bg-repeat py-32" id="benefits">
+    <section className="bg-[var(--color-light-blue)] bg-[length:3.125rem_3.125rem] bg-repeat py-32" >
       <div className="container">
         <div className="flex w-full flex-col items-start justify-between gap-4 pb-16 lg:flex-row lg:items-end">
           <div className="flex w-full max-w-[48rem] flex-1 flex-col items-start gap-5">

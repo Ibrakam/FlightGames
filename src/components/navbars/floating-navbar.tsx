@@ -4,6 +4,8 @@
 import { ChevronRight, Plane } from "lucide-react";
 import { useState } from "react";
 
+
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
@@ -64,13 +66,14 @@ const FloatingNavbar = () => {
         </NavigationMenu>
 
         {/* Auth Buttons */}
-        <div className="flex items-center gap-2.5">
+         <div className="flex items-center gap-2.5">
           <div className="max-lg:hidden">
-            <Button
-              className="bg-[var(--color-primary-blue)] text-white hover:bg-[var(--color-sky-blue)] transition-colors">
-
-              <span className="relative z-10">Начать игру</span>
-            </Button>
+            <Link href="/games">
+              <Button
+                className="bg-[var(--color-primary-blue)] text-white hover:bg-[var(--color-sky-blue)] transition-colors">
+                <span className="relative z-10">Начать игру</span>
+              </Button>
+            </Link>
           </div>
 
           {/* Hamburger Menu Button (Mobile Only) */}
@@ -118,11 +121,12 @@ const FloatingNavbar = () => {
             </a>
           ))}
           <div className="pt-4">
-            <Button
-              className="w-full bg-[var(--color-primary-blue)] text-white hover:bg-[var(--color-sky-blue)] transition-colors">
-
-              Начать игру
-            </Button>
+          <Link href="/games">
+              <Button
+                className="w-full bg-[var(--color-primary-blue)] text-white hover:bg-[var(--color-sky-blue)] transition-colors">
+                Начать игру
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>
